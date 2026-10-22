@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="藍天咖啡，為手沖咖啡愛好者挑選當季精品咖啡豆，讓每一杯都清澈、明亮、值得細品。">
   <title>藍天咖啡｜讓風味，慢慢抵達</title>
+  <meta name="description" content="藍天咖啡，為手沖咖啡愛好者挑選當季精品咖啡豆，讓每一杯都清澈、明亮、值得細品。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@600;700;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@600;700;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
   <style>
     :root {
       --navy: #062742;
@@ -215,17 +215,6 @@
     .video-frame { position: relative; overflow: hidden; padding: 43px 0 30px; background: linear-gradient(90deg, var(--mist) 0 58%, #f5f9f9 58%); }
     .video-frame::before { position: absolute; top: 43px; left: 0; width: 86px; height: 1px; background: var(--sky); box-shadow: 0 10px 0 var(--sky), 0 20px 0 var(--sky); content: ""; }
     .video-frame iframe { position: relative; z-index: 1; display: block; width: 560px; max-width: 100%; height: auto; aspect-ratio: 16 / 9; margin: 0 auto; border: 0; background: var(--navy); box-shadow: var(--shadow); }
-    .pour-rings, .pour-rings::before, .pour-rings::after { position: absolute; border: 1px solid rgba(12,91,149,.36); border-radius: 50%; content: ""; }
-    .pour-rings { top: 85px; left: 50%; width: 192px; height: 192px; transform: translateX(-50%); }
-    .pour-rings::before { inset: 22px; }
-    .pour-rings::after { inset: 47px; }
-    .dripper { position: absolute; z-index: 1; top: 118px; left: 50%; width: 128px; height: 164px; transform: translateX(-50%); }
-    .dripper-top { width: 128px; height: 60px; border: 2px solid var(--blue); clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%); background: rgba(255,255,255,.8); }
-    .dripper-top::after { position: absolute; top: 9px; left: 18px; width: 92px; height: 31px; border: 1px solid rgba(12,91,149,.55); border-radius: 50%; content: ""; }
-    .dripper-body { position: absolute; top: 58px; left: 32px; width: 64px; height: 80px; border: 2px solid var(--blue); border-top: 0; clip-path: polygon(12% 0, 88% 0, 100% 100%, 0 100%); background: rgba(255,255,255,.42); }
-    .dripper-base { position: absolute; bottom: 0; left: 15px; width: 98px; height: 21px; border: 2px solid var(--blue); border-radius: 50%; background: #fff; }
-    .brew-data { position: absolute; right: 25px; bottom: 22px; display: grid; justify-items: end; color: var(--blue); font-family: "Playfair Display", serif; font-size: 13px; font-weight: 700; letter-spacing: .05em; line-height: 1.5; }
-    .brew-data small { color: var(--muted); font-family: "Noto Sans TC", sans-serif; font-size: 10px; letter-spacing: .12em; }
     .brew-copy .section-copy { margin-bottom: 28px; }
     .brew-steps { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
     .brew-steps li { display: grid; grid-template-columns: 55px 1fr; gap: 12px; padding: 19px 0; border-bottom: 1px solid var(--line); }
@@ -301,7 +290,7 @@
       .section-heading .section-copy { margin-top: 15px; }
       .coffee-grid { grid-template-columns: 1fr; }
       .coffee-card, .coffee-card:nth-child(3) { grid-column: auto; min-height: 330px; }
-      .video-frame { padding: 36px 0 21px; min-height: 310px; }
+      .video-frame { padding: 36px 0 21px; min-height: auto; }
       .video-frame::before { top: 36px; width: 62px; }
       .subscribe-form { display: grid; gap: 7px; padding: 0; border: 0; }
       .subscribe-form input { width: 100%; min-height: 51px; border: 1px solid rgba(255,255,255,.45); }
@@ -327,7 +316,7 @@
       </a>
       <button class="menu-toggle" type="button" aria-controls="navLinks" aria-expanded="false" aria-label="開啟導覽選單">☰</button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#story">我們的故事</a></li>
+        <li><a href="#story">我想要的堅持</a></li>
         <li><a href="#coffee">本季選豆</a></li>
         <li><a href="#brew">沖煮日常</a></li>
         <li><a class="nav-cta" href="#visit">訂閱風味通信</a></li>
@@ -341,15 +330,15 @@
         <div class="hero-content reveal">
           <p class="eyebrow">HAND BREWED · SLOWLY ROASTED</p>
           <h1 class="hero-title" id="heroTitle">讓風味，在<span class="sky-text">藍天</span>下<br>慢慢抵達。</h1>
-          <p class="hero-lede">藍天咖啡為喜歡手沖的您，挑選值得細品的單一產區咖啡豆。從第一縷花香，到最後一口回甘，每一杯都有屬於自己的晴朗天氣。</p>
+          <p class="hero-lede">藍天咖啡為喜歡手沖的你，挑選值得細品的單一產區咖啡豆。從第一縷花香，到最後一口回甘，每一杯都有自己的晴朗天氣。</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#coffee">探索本季咖啡豆 →</a>
+            <a class="button button-primary" href="#coffee">探索本季風味 →</a>
             <a class="button button-secondary" href="#story">認識藍天</a>
           </div>
-          <p class="hero-place">TAIPEI · TAIWAN · EST. 2025</p>
+          <p class="hero-place">TAIPEI · TAIWAN · EST. 2018</p>
         </div>
         <div class="hero-art reveal" aria-label="窗邊手沖咖啡與山景">
-          <img class="hero-photo" src="images/hero.png" width="400" height="300" alt="窗邊的手沖咖啡與遠方山景">
+          <img class="hero-photo" src="images/hero.jpg" width="400" height="300" alt="藍天咖啡主視覺">
           <div class="art-note" aria-hidden="true"><strong>92°C</strong><span>理想水溫</span><small>細細喚醒香氣</small></div>
         </div>
       </div>
@@ -410,7 +399,7 @@
     <section class="brew" id="brew" aria-labelledby="brewTitle">
       <div class="wrap brew-grid">
         <div class="video-frame reveal">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/hMOYa4EBntI" title="藍天咖啡沖煮影片" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/hMOYa4EBntI" title="藍天咖啡沖煮影片" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="brew-copy reveal">
           <p class="eyebrow">A QUIET RITUAL</p>
@@ -446,15 +435,15 @@
           <p>為喜愛手沖咖啡的你，留下一段慢慢品味、微微放晴的時間。</p>
         </div>
         <div>
-          <p class="footer-title">網站主題</p>
-          <ul class="footer-links"><li><a href="#story">我們的故事</a></li><li><a href="#coffee">本季選豆</a></li><li><a href="#brew">沖煮日常</a></li></ul>
+          <p class="footer-title">Explore</p>
+          <ul class="footer-links"><li><a href="#story">我們的堅持</a></li><li><a href="#coffee">本季選豆</a></li><li><a href="#brew">沖煮日常</a></li></ul>
         </div>
         <div>
-          <p class="footer-title">聯絡我們</p>
-          <ul class="footer-links"><li><a href="mailto:hello@bluesky.coffee">hello@bluesky.coffee</a></li><li>台中市西屯區僑光路 100 號</li><li>每日 10:00 — 19:00</li></ul>
+          <p class="footer-title">Contact</p>
+          <ul class="footer-links"><li><a href="mailto:hello@bluesky.coffee">hello@bluesky.coffee</a></li><li>台中市大安區晴朗路 18 號</li><li>每日 10:00 — 19:00</li></ul>
         </div>
       </div>
-      <div class="footer-bottom"><span>© 2025 BLUE SKY COFFEE. ALL RIGHTS RESERVED.</span><span>BREW SLOW · LIVE BRIGHT</span></div>
+      <div class="footer-bottom"><span>© 2026 BLUE SKY COFFEE. ALL RIGHTS RESERVED.</span><span>BREW SLOW · LIVE BRIGHT</span></div>
     </div>
   </footer>
 
